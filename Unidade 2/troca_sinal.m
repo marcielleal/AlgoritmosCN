@@ -1,5 +1,5 @@
 function [a b] = troca_sinal(f,x,p)
-while(logical(f(x)*f(x+p) > 0))
+while(f(x)*f(x+p) > 0)
   a = x;
   x = x + p;
   b =x;
